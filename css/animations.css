@@ -2,7 +2,6 @@
    ANIMATIONS
 ========================================= */
 
-/* Fade-in up animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -14,7 +13,6 @@
   }
 }
 
-/* Soft pulse for orbs */
 @keyframes pulse {
   0%, 100% {
     opacity: 0.35;
@@ -26,7 +24,6 @@
   }
 }
 
-/* Apply pulse to orbs */
 .orb {
   animation: pulse 8s ease-in-out infinite;
 }
@@ -39,7 +36,6 @@
   animation-delay: 4s;
 }
 
-/* Hero content entrance */
 .hero-greeting,
 .hero-name,
 .hero-title,
@@ -49,27 +45,12 @@
   opacity: 0;
 }
 
-.hero-greeting {
-  animation-delay: 0.1s;
-}
+.hero-greeting { animation-delay: 0.1s; }
+.hero-name { animation-delay: 0.25s; }
+.hero-title { animation-delay: 0.4s; }
+.hero-description { animation-delay: 0.55s; }
+.hero-buttons { animation-delay: 0.7s; }
 
-.hero-name {
-  animation-delay: 0.25s;
-}
-
-.hero-title {
-  animation-delay: 0.4s;
-}
-
-.hero-description {
-  animation-delay: 0.55s;
-}
-
-.hero-buttons {
-  animation-delay: 0.7s;
-}
-
-/* Smooth transition for project cards and links */
 .project-card,
 .link-card,
 .skill-item {
@@ -83,6 +64,7 @@
 .link-card:hover {
   box-shadow: 0 8px 20px rgba(124, 108, 255, 0.12);
 }
+
 /* Scroll reveal */
 .reveal {
   opacity: 0;
