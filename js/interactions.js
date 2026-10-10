@@ -1,10 +1,5 @@
-// =========================================
-// INTERACTIONS
-// =========================================
-
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Smooth reveal on scroll for sections
   const observerOptions = {
     threshold: 0.15,
     rootMargin: '0px 0px -50px 0px'
@@ -18,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOptions);
 
-  // Observe all sections except hero
   document.querySelectorAll('.section').forEach(section => {
     section.classList.add('reveal');
     observer.observe(section);
