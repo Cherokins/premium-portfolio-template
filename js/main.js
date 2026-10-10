@@ -1,10 +1,6 @@
-// =========================================
-// MAIN JAVASCRIPT
-// =========================================
-
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ----- Mobile Menu Toggle -----
+  // Mobile Menu Toggle
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -14,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
       menuToggle.classList.toggle('active');
     });
 
-    // Close menu when a link is clicked
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
@@ -23,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ----- Active link highlighting on scroll -----
+  // Active link highlighting on scroll
   const sections = document.querySelectorAll('section[id]');
   const navItems = document.querySelectorAll('.nav-links a');
 
@@ -47,5 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', highlightNav);
-
 });
